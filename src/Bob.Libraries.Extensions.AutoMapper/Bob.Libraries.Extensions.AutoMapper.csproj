@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>AutoMapper</RootNamespace>
+    <AssemblyName>Bob.Libraries.Extensions.AutoMapper</AssemblyName>
+    <Version>2.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bob.Libraries.Extensions.DependencyInjection\Bob.Libraries.Extensions.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>

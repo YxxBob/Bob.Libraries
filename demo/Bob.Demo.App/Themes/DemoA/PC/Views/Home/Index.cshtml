@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>DemoA Index</h2>
+
+<form asp-action="TestCaptcha">
+    <captcha asp-captcha-name="mycaptcha" 
+             asp-textbox-placeholder="Security code as a number"
+             asp-textbox-class="text-box single-line form-control col-md-4"
+             asp-refresh-button-class="glyphicon glyphicon-refresh btn-sm"
+             asp-image-fontsize="20" asp-image-height="45" asp-image-width="100"
+             asp-captcha-haslower="false" asp-captcha-hasupper="false" asp-captcha-hasnumber="true"
+    />
+  
+    <button type="submit">submit</button>
+</form>
+<timeperiod></timeperiod>

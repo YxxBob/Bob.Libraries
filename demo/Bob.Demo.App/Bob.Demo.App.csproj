@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Menu\Index.cshtml" />
+    <None Include="wwwroot\css\reset.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\js\weixin.menu.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.AutoMapper\Bob.Libraries.Extensions.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.Captcha\Bob.Libraries.Extensions.Captcha.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.CustomTags\Bob.Libraries.Extensions.CustomTags.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.DependencyInjection\Bob.Libraries.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.Monitor\Bob.Libraries.Extensions.Monitor.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.MultiThemes\Bob.Libraries.Extensions.MultiThemes.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.Protobuf\Bob.Libraries.Extensions.Protobuf.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.QRCode\Bob.Libraries.Extensions.QRCode.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.Security\Bob.Libraries.Extensions.Security.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.WeChat\Bob.Libraries.Extensions.WeChat.csproj" />
+    <ProjectReference Include="..\Bob.Test.BLL\Bob.Demo.BLL.csproj" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

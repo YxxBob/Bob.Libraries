@@ -1,0 +1,17 @@
+﻿{
+  "Multitenancy": {
+    "Tenants": [
+      {
+        "Name": "DemoA",
+        "DefaultTheme": "DemoA",
+        "MobileTheme": "DemoA/Mobile",
+        "PCTheme": "DemoA/PC"
+      },
+      {
+        "Name": "DemoB",
+        "Theme": "DemoB"
+      }
+    ],
+    "CurrentTenant": "DemoA"
+  }
+}

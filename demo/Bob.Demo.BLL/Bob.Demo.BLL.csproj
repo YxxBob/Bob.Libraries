@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.AutoMapper\Bob.Libraries.Extensions.AutoMapper.csproj" />
+    <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.DependencyInjection\Bob.Libraries.Extensions.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>

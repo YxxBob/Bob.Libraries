@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net451</TargetFramework>
+    <RootNamespace>Autofac</RootNamespace>
+    <AssemblyName>Bob.Libraries.Extensions.Autofac</AssemblyName>
+  </PropertyGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net451' ">
+    <PackageReference Include="Autofac" Version="3.5.0" />
+  </ItemGroup>
+  
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.1' ">
+    <PackageReference Include="Autofac" Version="4.6.0" />
+  </ItemGroup>
+</Project>
