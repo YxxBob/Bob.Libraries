@@ -1,0 +1,2 @@
+﻿@model DateTime?
+@( Model.HasValue && Model > DateTime.MinValue ? Model.Value.ToString("yyyy-MM-dd HH:mm:ss") : null)

@@ -35,6 +35,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bob.Libraries.Extensions.Ht
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bob.Libraries.Extensions.QRCode", "src\Bob.Libraries.Extensions.QRCode\Bob.Libraries.Extensions.QRCode.csproj", "{FDAB17A5-56F0-4BEB-A6FA-51051FCA40FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bob.Libraries.Extensions.MonitorWeb", "src\Bob.Libraries.Extensions.MonitorWeb\Bob.Libraries.Extensions.MonitorWeb.csproj", "{E923A61E-34E0-4110-BB09-705E3408C29E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{FDAB17A5-56F0-4BEB-A6FA-51051FCA40FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAB17A5-56F0-4BEB-A6FA-51051FCA40FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDAB17A5-56F0-4BEB-A6FA-51051FCA40FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E923A61E-34E0-4110-BB09-705E3408C29E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E923A61E-34E0-4110-BB09-705E3408C29E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E923A61E-34E0-4110-BB09-705E3408C29E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E923A61E-34E0-4110-BB09-705E3408C29E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{1DBBD179-0C3E-4D24-8D80-B8AA527A20B1} = {89A9811B-6BE9-44DF-91AC-EA0027CFA126}
 		{3B2925DC-5FA2-4CE1-B191-498D64B73EC9} = {89A9811B-6BE9-44DF-91AC-EA0027CFA126}
 		{FDAB17A5-56F0-4BEB-A6FA-51051FCA40FF} = {89A9811B-6BE9-44DF-91AC-EA0027CFA126}
+		{E923A61E-34E0-4110-BB09-705E3408C29E} = {89A9811B-6BE9-44DF-91AC-EA0027CFA126}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2093AAEF-1D7C-4409-A93C-62D484FB6433}

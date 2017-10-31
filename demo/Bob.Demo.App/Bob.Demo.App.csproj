@@ -30,7 +30,7 @@
     <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.QRCode\Bob.Libraries.Extensions.QRCode.csproj" />
     <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.Security\Bob.Libraries.Extensions.Security.csproj" />
     <ProjectReference Include="..\..\src\Bob.Libraries.Extensions.WeChat\Bob.Libraries.Extensions.WeChat.csproj" />
-    <ProjectReference Include="..\Bob.Test.BLL\Bob.Demo.BLL.csproj" />
+    <ProjectReference Include="..\Bob.Demo.BLL\Bob.Demo.BLL.csproj" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>

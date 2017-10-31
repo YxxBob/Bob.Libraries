@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using Bob.Libraries.Extensions.MonitorWeb.Models
+@model IList<SystemInfoModel>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>程序名称</th>
+            <th>域名</th>
+            <th>IP地址</th>
+            <th>程序入口文件</th>
+            <th>程序版本</th>
+            <th>发布时间</th>
+            <th>服务器名称</th>
+            <th>服务器时间</th>
+            @*<th>服务器时区</th>*@
+            <th>AspNet信息</th>
+            <th>操作系统</th>
+            <th>状态</th>
+            <th>响应时间(毫秒)</th>
+        </tr>
+        </thead>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.HostName</td>
+                <td>@item.HttpHost</td>
+                <td>@item.IPAddress</td>
+                <td>@item.AppName</td>
+                <td>@item.AppVersion</td>
+                <td>@Html.DisplayFor(m => item.ReleaseDate, "DateTimeNullable") </td>
+                <td>@item.MachineName</td>
+                <td>@Html.DisplayFor(m => item.ServerLocalTime, "DateTimeNullable")</td>
+                @*<td>@item.ServerTimeZone</td>*@
+                <td>@item.AspNetInfo</td>
+                <td>@item.OperatingSystem</td>
+                <td>
+                    @if (item.IsAlive == true)
+                    {
+                        <span style="color: green">正常</span>
+                    }
+                    else
+                    {
+                        <span style="color: red">异常</span>
+                    }
+                </td>
+                <td>@item.ETime</td>
+            </tr>
+        }
+
+    </table>
+</div>
