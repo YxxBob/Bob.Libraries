@@ -8,12 +8,29 @@ namespace Bob.Libraries.Extensions.MonitorWeb.Controllers
 {
     public class WebServerCore
     {
-        HttpClient client = new HttpClient();
+        HttpClient client = null;
+
+        public HttpClient Client
+        {
+            get
+            {
+                if (client == null)
+                {
+                    client = new HttpClient
+                    {
+                        Timeout = TimeSpan.FromSeconds(1)
+                    };
+                }
+                return client;
+            }
+        }
+
         private async Task<TResult> SendAsync<TResult>(string url) where TResult : class
         {
-            string response = await client.GetStringAsync(url);
+
             try
             {
+                string response = await Client.GetStringAsync(url);
                 TResult result;
                 if (typeof(TResult) == typeof(String))
                 {
@@ -27,7 +44,7 @@ namespace Bob.Libraries.Extensions.MonitorWeb.Controllers
             }
             catch (System.Exception e)
             {
-                throw e;
+                return null;
             }
         }
 
